@@ -9,20 +9,38 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "FirebaseBinaries",
-            targets: ["FirebaseBinaries"]),
+            targets: [
+                "FBLPromises",
+                "FirebaseAnalytics",
+                "FirebaseAnalyticsSwift",
+                "FirebaseCore",
+                "FirebaseCoreInternal",
+                "FirebaseInstallations",
+                "GoogleAppMeasurement",
+                "GoogleAppMeasurementIdentitySupport",
+                "GoogleUtilities",
+                "nanopb",
+                "FirebaseCrashlytics",
+                "GoogleDataTransport",
+                "FirebaseMessaging",
+                "FirebaseDynamicLinks"
+            ]),
     ],
-    dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        // .package(url: /* package url */, from: "1.0.0"),
-    ],
+
     targets: [
-        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .target(
-            name: "FirebaseBinaries",
-            dependencies: []),
-        .testTarget(
-            name: "FirebaseBinariesTests",
-            dependencies: ["FirebaseBinaries"]),
+        .binaryTarget(name: "FBLPromises", path: "Sources/Frameworks/FirebaseAnalytics/FBLPromises.xcframework"),
+        .binaryTarget(name: "FirebaseAnalytics", path: "Sources/Frameworks/FirebaseAnalytics/FirebaseAnalytics.xcframework"),
+        .binaryTarget(name: "FirebaseAnalyticsSwift", path: "Sources/Frameworks/FirebaseAnalytics/FirebaseAnalyticsSwift.xcframework"),
+        .binaryTarget(name: "FirebaseCore", path: "Sources/Frameworks/FirebaseAnalytics/FirebaseCore.xcframework"),
+        .binaryTarget(name: "FirebaseCoreInternal", path: "Sources/Frameworks/FirebaseAnalytics/FirebaseCoreInternal.xcframework"),
+        .binaryTarget(name: "FirebaseInstallations", path: "Sources/Frameworks/FirebaseAnalytics/FirebaseInstallations.xcframework"),
+        .binaryTarget(name: "GoogleAppMeasurement", path: "Sources/Frameworks/FirebaseAnalytics/GoogleAppMeasurement.xcframework"),
+        .binaryTarget(name: "GoogleAppMeasurementIdentitySupport", path: "Sources/Frameworks/FirebaseAnalytics/GoogleAppMeasurementIdentitySupport.xcframework"),
+        .binaryTarget(name: "GoogleUtilities", path: "Sources/Frameworks/FirebaseAnalytics/GoogleUtilities.xcframework"),
+        .binaryTarget(name: "nanopb", path: "Sources/Frameworks/FirebaseAnalytics/nanopb.xcframework"),
+        .binaryTarget(name: "FirebaseCrashlytics", path: "Sources/Frameworks/FirebaseCrashlytics/FirebaseCrashlytics.xcframework"),
+        .binaryTarget(name: "GoogleDataTransport", path: "Sources/Frameworks/FirebaseCrashlytics/GoogleDataTransport.xcframework"),
+        .binaryTarget(name: "FirebaseMessaging", path: "Sources/Frameworks/FirebaseMessaging/FirebaseMessaging.xcframework"),
+        .binaryTarget(name: "FirebaseDynamicLinks", path: "Sources/Frameworks/FirebaseDynamicLinks/FirebaseDynamicLinks.xcframework")
     ]
 )
