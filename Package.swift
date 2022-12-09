@@ -12,6 +12,7 @@ let package = Package(
             name: "FirebaseBinaries",
             targets: [
                 "FBLPromises",
+                "FirebaseAnalytics",
                 "FirebaseAnalyticsSwift",
                 "FirebaseCore",
                 "FirebaseCoreInternal",
@@ -29,6 +30,7 @@ let package = Package(
 
     targets: [
         .binaryTarget(name: "FBLPromises", path: "Sources/Frameworks/FirebaseAnalytics/FBLPromises.xcframework"),
+        .binaryTarget(name: "FirebaseAnalytics", path: "Sources/Frameworks/FirebaseAnalytics/FirebaseAnalytics.xcframework"),
         .binaryTarget(name: "FirebaseAnalyticsSwift", path: "Sources/Frameworks/FirebaseAnalytics/FirebaseAnalyticsSwift.xcframework"),
         .binaryTarget(name: "FirebaseCore", path: "Sources/Frameworks/FirebaseAnalytics/FirebaseCore.xcframework"),
         .binaryTarget(name: "FirebaseCoreInternal", path: "Sources/Frameworks/FirebaseAnalytics/FirebaseCoreInternal.xcframework"),
