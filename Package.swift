@@ -5,6 +5,8 @@ import PackageDescription
 
 let package = Package(
     name: "FirebaseBinaries",
+    platforms: [.macOS(.v10_13),
+                .iOS(.v11)],
     products: [
         .library(
             name: "FirebaseBinaries",
