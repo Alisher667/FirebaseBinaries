@@ -11,7 +11,6 @@ let package = Package(
         .library(
             name: "FirebaseBinaries",
             targets: [
-                "FBLPromises",
                 "FirebaseAnalytics",
                 "FirebaseAnalyticsSwift",
                 "FirebaseCore",
@@ -25,7 +24,8 @@ let package = Package(
                 "GoogleDataTransport",
                 "FirebaseMessaging",
                 "FirebaseDynamicLinks"
-            ])
+            ]
+        ),
     ],
     targets: [
         .binaryTarget(name: "FBLPromises", path: "Sources/Frameworks/FirebaseAnalytics/FBLPromises.xcframework"),
@@ -41,6 +41,6 @@ let package = Package(
         .binaryTarget(name: "FirebaseCrashlytics", path: "Sources/Frameworks/FirebaseCrashlytics/FirebaseCrashlytics.xcframework"),
         .binaryTarget(name: "GoogleDataTransport", path: "Sources/Frameworks/FirebaseCrashlytics/GoogleDataTransport.xcframework"),
         .binaryTarget(name: "FirebaseMessaging", path: "Sources/Frameworks/FirebaseMessaging/FirebaseMessaging.xcframework"),
-        .binaryTarget(name: "FirebaseDynamicLinks", path: "Sources/Frameworks/FirebaseDynamicLinks/FirebaseDynamicLinks.xcframework"),
+        .binaryTarget(name: "FirebaseDynamicLinks", path: "Sources/Frameworks/FirebaseDynamicLinks/FirebaseDynamicLinks.xcframework")
     ]
 )
