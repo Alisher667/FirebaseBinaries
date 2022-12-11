@@ -28,18 +28,18 @@ let package = Package(
         ),
     ],
     targets: [
-        .binaryTarget(name: "FirebaseAnalytics", path: "Sources/Frameworks/FirebaseAnalytics/FirebaseAnalytics.xcframework"),
-        .binaryTarget(name: "FirebaseAnalyticsSwift", path: "Sources/Frameworks/FirebaseAnalytics/FirebaseAnalyticsSwift.xcframework"),
-        .binaryTarget(name: "FirebaseCore", path: "Sources/Frameworks/FirebaseAnalytics/FirebaseCore.xcframework"),
-        .binaryTarget(name: "FirebaseCoreInternal", path: "Sources/Frameworks/FirebaseAnalytics/FirebaseCoreInternal.xcframework"),
-        .binaryTarget(name: "FirebaseInstallations", path: "Sources/Frameworks/FirebaseAnalytics/FirebaseInstallations.xcframework"),
-        .binaryTarget(name: "GoogleAppMeasurement", path: "Sources/Frameworks/FirebaseAnalytics/GoogleAppMeasurement.xcframework"),
-        .binaryTarget(name: "GoogleAppMeasurementIdentitySupport", path: "Sources/Frameworks/FirebaseAnalytics/GoogleAppMeasurementIdentitySupport.xcframework"),
-        .binaryTarget(name: "GoogleUtilities", path: "Sources/Frameworks/FirebaseAnalytics/GoogleUtilities.xcframework"),
-        .binaryTarget(name: "nanopb", path: "Sources/Frameworks/FirebaseAnalytics/nanopb.xcframework"),
-        .binaryTarget(name: "FirebaseCrashlytics", path: "Sources/Frameworks/FirebaseCrashlytics/FirebaseCrashlytics.xcframework"),
-        .binaryTarget(name: "GoogleDataTransport", path: "Sources/Frameworks/FirebaseCrashlytics/GoogleDataTransport.xcframework"),
-        .binaryTarget(name: "FirebaseMessaging", path: "Sources/Frameworks/FirebaseMessaging/FirebaseMessaging.xcframework"),
-        .binaryTarget(name: "FirebaseDynamicLinks", path: "Sources/Frameworks/FirebaseDynamicLinks/FirebaseDynamicLinks.xcframework")
+        .binaryTarget(name: "FirebaseAnalytics", path: "Frameworks/FirebaseAnalytics/FirebaseAnalytics.xcframework"),
+        .binaryTarget(name: "FirebaseAnalyticsSwift", path: "Frameworks/FirebaseAnalytics/FirebaseAnalyticsSwift.xcframework"),
+        .binaryTarget(name: "FirebaseCore", path: "Frameworks/FirebaseAnalytics/FirebaseCore.xcframework"),
+        .binaryTarget(name: "FirebaseCoreInternal", path: "Frameworks/FirebaseAnalytics/FirebaseCoreInternal.xcframework"),
+        .binaryTarget(name: "FirebaseInstallations", path: "Frameworks/FirebaseAnalytics/FirebaseInstallations.xcframework"),
+        .binaryTarget(name: "GoogleAppMeasurement", path: "Frameworks/FirebaseAnalytics/GoogleAppMeasurement.xcframework"),
+        .binaryTarget(name: "GoogleAppMeasurementIdentitySupport", path: "Frameworks/FirebaseAnalytics/GoogleAppMeasurementIdentitySupport.xcframework"),
+        .binaryTarget(name: "GoogleUtilities", path: "Frameworks/FirebaseAnalytics/GoogleUtilities.xcframework"),
+        .binaryTarget(name: "nanopb", path: "Frameworks/FirebaseAnalytics/nanopb.xcframework"),
+        .binaryTarget(name: "FirebaseCrashlytics", path: "Frameworks/FirebaseCrashlytics/FirebaseCrashlytics.xcframework"),
+        .binaryTarget(name: "GoogleDataTransport", path: "Frameworks/FirebaseCrashlytics/GoogleDataTransport.xcframework"),
+        .binaryTarget(name: "FirebaseMessaging", path: "Frameworks/FirebaseMessaging/FirebaseMessaging.xcframework"),
+        .binaryTarget(name: "FirebaseDynamicLinks", path: "Frameworks/FirebaseDynamicLinks/FirebaseDynamicLinks.xcframework")
     ]
 )
