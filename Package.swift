@@ -62,7 +62,6 @@ let frameworks = ["GTMSessionFetcher": "0c66514053e161ddb243cb9d5b3f97cb4a6e5586
                   "FirebaseDynamicLinks": "a3ed0a4261726b45f60b44bf1c69eb5477cc01a3ffb691e6f0f9847bd090ac58",
                   "FirebaseCrashlytics": "2a69f94aa268398caf4c16de69c02022c220b7c7c54cd63471f9c30a5c466ae8",
                   "FirebaseAnalytics": "6c3a97d7eb78ae119ee2e7528393bfc4e7e934f3b2767d8c56f5bf15511a629e",
-                  "GTMAppAuth": "a30f4a6e0e80c4a449768d6aa71734878338b88f1663c99cb5c4287578b2336b",
                   "gRPC-C++": "73576cfdb704ff85e4a4a4f99cd0f9d80c54805599798ce963087a17ab370d7b",
                   "FirebaseCoreExtension": "651fe385f114147e06e7d5c00c037c6ebcd813b6e5c163632f9c0ee9672baab5",
                   "FirebaseCoreInternal": "2291d48bf9aa4fd54b350df4ef4afb596cf7e8f2ea0e313cd9fa8e0349625148",
