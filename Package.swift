@@ -5,8 +5,10 @@ import PackageDescription
 
 let package = Package(
     name: "FirebaseBinaries",
-    platforms: [.macOS(.v10_13),
-                .iOS(.v12)],
+    platforms: [
+        .macOS(.v10_13),
+        .iOS(.v12)
+    ],
     products: [
         .library(
             name: "FirebaseBinaries",
@@ -27,7 +29,6 @@ let package = Package(
             ]
         ),
     ],
-    
     targets: [
         .binaryTarget(name: "FirebaseAnalytics", path: "Frameworks/FirebaseAnalytics/FirebaseAnalytics.xcframework"),
         .binaryTarget(name: "FirebaseAnalyticsSwift", path: "Frameworks/FirebaseAnalytics/FirebaseAnalyticsSwift.xcframework"),
