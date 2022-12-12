@@ -40,6 +40,24 @@ let package = Package(
         .binaryTarget(name: "FirebaseCrashlytics", path: "Frameworks/FirebaseCrashlytics/FirebaseCrashlytics.xcframework"),
         .binaryTarget(name: "GoogleDataTransport", path: "Frameworks/FirebaseCrashlytics/GoogleDataTransport.xcframework"),
         .binaryTarget(name: "FirebaseMessaging", path: "Frameworks/FirebaseMessaging/FirebaseMessaging.xcframework"),
-        .binaryTarget(name: "FirebaseDynamicLinks", path: "Frameworks/FirebaseDynamicLinks/FirebaseDynamicLinks.xcframework")
+        .binaryTarget(name: "FirebaseDynamicLinks", path: "Frameworks/FirebaseDynamicLinks/FirebaseDynamicLinks.xcframework"),
+        .target(
+            name: "FirebaseBinaries",
+            dependencies: [
+                "FirebaseAnalytics",
+                "FirebaseAnalyticsSwift",
+                "FirebaseCore",
+                "FirebaseCoreInternal",
+                "FirebaseInstallations",
+                "GoogleAppMeasurement",
+                "GoogleAppMeasurementIdentitySupport",
+                "GoogleUtilities",
+                "nanopb",
+                "FirebaseCrashlytics",
+                "GoogleDataTransport",
+                "FirebaseMessaging",
+                "FirebaseDynamicLinks"
+            ]
+        )
     ]
 )
