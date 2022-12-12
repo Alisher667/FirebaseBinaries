@@ -5,12 +5,15 @@ import PackageDescription
 
 let package = Package(
     name: "FirebaseBinaries",
-    platforms: [.macOS(.v10_13),
-                .iOS(.v12)],
+    platforms: [
+        .macOS(.v10_13),
+        .iOS(.v12)
+    ],
     products: [
         .library(
             name: "FirebaseBinaries",
             targets: [
+                "FirebaseBinaries",
                 "FirebaseAnalytics",
                 "FirebaseAnalyticsSwift",
                 "FirebaseCore",
