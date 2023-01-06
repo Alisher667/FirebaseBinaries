@@ -26,7 +26,11 @@ let package = Package(
                 "FirebaseCrashlytics",
                 "GoogleDataTransport",
                 "FirebaseMessaging",
-                "FirebaseDynamicLinks"
+                "FirebaseDynamicLinks",
+                "FirebaseRemoteConfig",
+                "FirebaseABTesting",
+                "FirebaseRemoteConfigSwift",
+                "FirebaseSharedSwift"
             ]
         ),
     ],
@@ -44,6 +48,10 @@ let package = Package(
         .binaryTarget(name: "GoogleDataTransport", path: "Frameworks/FirebaseCrashlytics/GoogleDataTransport.xcframework"),
         .binaryTarget(name: "FirebaseMessaging", path: "Frameworks/FirebaseMessaging/FirebaseMessaging.xcframework"),
         .binaryTarget(name: "FirebaseDynamicLinks", path: "Frameworks/FirebaseDynamicLinks/FirebaseDynamicLinks.xcframework"),
+        .binaryTarget(name: "FirebaseRemoteConfig", path: "Frameworks/FirebaseRemoteConfig/FirebaseRemoteConfig.xcframework"),
+        .binaryTarget(name: "FirebaseABTesting", path: "Frameworks/FirebaseRemoteConfig/FirebaseABTesting.xcframework"),
+        .binaryTarget(name: "FirebaseRemoteConfigSwift", path: "Frameworks/FirebaseRemoteConfig/FirebaseRemoteConfigSwift.xcframework"),
+        .binaryTarget(name: "FirebaseSharedSwift", path: "Frameworks/FirebaseRemoteConfig/FirebaseSharedSwift.xcframework"),
         .target(
             name: "FirebaseBinaries",
             dependencies: [
@@ -59,7 +67,11 @@ let package = Package(
                 "FirebaseCrashlytics",
                 "GoogleDataTransport",
                 "FirebaseMessaging",
-                "FirebaseDynamicLinks"
+                "FirebaseDynamicLinks",
+                "FirebaseRemoteConfig",
+                "FirebaseABTesting",
+                "FirebaseRemoteConfigSwift",
+                "FirebaseSharedSwift"
             ]
         )
     ]
