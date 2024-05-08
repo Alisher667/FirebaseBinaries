@@ -31,7 +31,12 @@ let package = Package(
                 "FirebaseSharedSwift",
                 "FirebaseCoreExtension",
                 "FirebaseSessions",
-                "FirebaseRemoteConfigInterop"
+                "FirebaseRemoteConfigInterop",
+                "FirebaseAppCheckInterop",
+                "FirebaseAuthInterop",
+                "FirebaseFunctions",
+                "FirebaseMessagingInterop",
+                "GTMSessionFetcher"
             ]
         ),
     ],
@@ -54,6 +59,11 @@ let package = Package(
         .binaryTarget(name: "FirebaseCoreExtension", path: "Frameworks/FirebaseCrashlytics/FirebaseCoreExtension.xcframework"),
         .binaryTarget(name: "FirebaseSessions", path: "Frameworks/FirebaseCrashlytics/FirebaseSessions.xcframework"),
         .binaryTarget(name: "FirebaseRemoteConfigInterop", path: "Frameworks/FirebaseCrashlytics/FirebaseRemoteConfigInterop.xcframework"),
+        .binaryTarget(name: "FirebaseAppCheckInterop", path: "Frameworks/FirebaseFunctions/FirebaseAppCheckInterop.xcframework"),
+        .binaryTarget(name: "FirebaseAuthInterop", path: "Frameworks/FirebaseFunctions/FirebaseAuthInterop.xcframework"),
+        .binaryTarget(name: "FirebaseFunctions", path: "Frameworks/FirebaseFunctions/FirebaseFunctions.xcframework"),
+        .binaryTarget(name: "FirebaseMessagingInterop", path: "Frameworks/FirebaseFunctions/FirebaseMessagingInterop.xcframework"),
+        .binaryTarget(name: "GTMSessionFetcher", path: "Frameworks/FirebaseFunctions/GTMSessionFetcher.xcframework"),
         .target(
             name: "FirebaseBinaries",
             dependencies: [
@@ -73,7 +83,12 @@ let package = Package(
                 "FirebaseABTesting",
                 "FirebaseSharedSwift",
                 "FirebaseCoreExtension",
-                "FirebaseSessions"
+                "FirebaseSessions",
+                "FirebaseAppCheckInterop",
+                "FirebaseAuthInterop",
+                "FirebaseFunctions",
+                "FirebaseMessagingInterop",
+                "GTMSessionFetcher"
             ]
         )
     ]
