@@ -32,7 +32,10 @@ let package = Package(
                 "FirebaseRemoteConfigSwift",
                 "FirebaseSharedSwift",
                 "FirebaseCoreExtension",
-                "FirebaseSessions"
+                "FirebaseSessions",
+                "FirebaseAppCheckInterop",
+                "FirebaseAuth",
+                "GTMSessionFetcher"
             ]
         ),
     ],
@@ -56,6 +59,9 @@ let package = Package(
         .binaryTarget(name: "FirebaseSharedSwift", path: "Frameworks/FirebaseRemoteConfig/FirebaseSharedSwift.xcframework"),
         .binaryTarget(name: "FirebaseCoreExtension", path: "Frameworks/FirebaseCrashlytics/FirebaseCoreExtension.xcframework"),
         .binaryTarget(name: "FirebaseSessions", path: "Frameworks/FirebaseCrashlytics/FirebaseSessions.xcframework"),
+        .binaryTarget(name: "FirebaseAppCheckInterop", path: "Frameworks/FirebaseAuth/FirebaseAppCheckInterop.xcframework"),
+        .binaryTarget(name: "FirebaseAuth", path: "Frameworks/FirebaseAuth/FirebaseAuth.xcframework"),
+        .binaryTarget(name: "GTMSessionFetcher", path: "Frameworks/FirebaseAuth/GTMSessionFetcher.xcframework"),
         .target(
             name: "FirebaseBinaries",
             dependencies: [
@@ -77,7 +83,10 @@ let package = Package(
                 "FirebaseRemoteConfigSwift",
                 "FirebaseSharedSwift",
                 "FirebaseCoreExtension",
-                "FirebaseSessions"
+                "FirebaseSessions",
+                "FirebaseAppCheckInterop",
+                "FirebaseAuth",
+                "GTMSessionFetcher"
             ]
         )
     ]
