@@ -32,7 +32,8 @@ let package = Package(
                 "FirebaseRemoteConfigSwift",
                 "FirebaseSharedSwift",
                 "FirebaseCoreExtension",
-                "FirebaseSessions"
+                "FirebaseSessions",
+                "FBLPromises"
             ]
         ),
     ],
@@ -56,6 +57,7 @@ let package = Package(
         .binaryTarget(name: "FirebaseSharedSwift", path: "Frameworks/FirebaseRemoteConfig/FirebaseSharedSwift.xcframework"),
         .binaryTarget(name: "FirebaseCoreExtension", path: "Frameworks/FirebaseCrashlytics/FirebaseCoreExtension.xcframework"),
         .binaryTarget(name: "FirebaseSessions", path: "Frameworks/FirebaseCrashlytics/FirebaseSessions.xcframework"),
+        .binaryTarget(name: "FBLPromises", path: "Frameworks/FirebaseAnalytics/FBLPromises.xcframework"),
         .target(
             name: "FirebaseBinaries",
             dependencies: [
@@ -77,7 +79,8 @@ let package = Package(
                 "FirebaseRemoteConfigSwift",
                 "FirebaseSharedSwift",
                 "FirebaseCoreExtension",
-                "FirebaseSessions"
+                "FirebaseSessions",
+                "FBLPromises"
             ]
         )
     ]
