@@ -47,6 +47,7 @@ let package = Package(
         .binaryTarget(name: "FirebaseMessaging", path: "Frameworks/FirebaseMessaging/FirebaseMessaging.xcframework"),
         .binaryTarget(name: "FirebaseRemoteConfig", path: "Frameworks/FirebaseRemoteConfig/FirebaseRemoteConfig.xcframework"),
         .binaryTarget(name: "FirebaseABTesting", path: "Frameworks/FirebaseRemoteConfig/FirebaseABTesting.xcframework"),
+        .binaryTarget(name: "FirebaseRemoteConfigInterop", path: "Frameworks/FirebaseRemoteConfig/FirebaseRemoteConfigInterop.xcframework"),
         .binaryTarget(name: "FirebaseSharedSwift", path: "Frameworks/FirebaseRemoteConfig/FirebaseSharedSwift.xcframework"),
         .binaryTarget(name: "FirebaseCoreExtension", path: "Frameworks/FirebaseCrashlytics/FirebaseCoreExtension.xcframework"),
         .binaryTarget(name: "FirebaseSessions", path: "Frameworks/FirebaseCrashlytics/FirebaseSessions.xcframework"),
