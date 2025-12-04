@@ -29,7 +29,8 @@ let package = Package(
                 "FirebaseABTesting",
                 "FirebaseSharedSwift",
                 "FirebaseCoreExtension",
-                "FirebaseSessions"
+                "FirebaseSessions",
+                "FirebaseRemoteConfigInterop"
             ]
         ),
     ],
