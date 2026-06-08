@@ -8,7 +8,6 @@
 import FirebaseAnalytics
 import FirebaseCore
 import FirebaseMessaging
-import FirebaseDynamicLinks
 
 class FirebaseBinaries {
     
