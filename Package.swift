@@ -15,7 +15,6 @@ let package = Package(
             targets: [
                 "FirebaseBinaries",
                 "FirebaseAnalytics",
-                "FirebaseAnalyticsSwift",
                 "FirebaseCore",
                 "FirebaseCoreInternal",
                 "FirebaseInstallations",
@@ -26,19 +25,19 @@ let package = Package(
                 "FirebaseCrashlytics",
                 "GoogleDataTransport",
                 "FirebaseMessaging",
-                "FirebaseDynamicLinks",
                 "FirebaseRemoteConfig",
                 "FirebaseABTesting",
-                "FirebaseRemoteConfigSwift",
                 "FirebaseSharedSwift",
                 "FirebaseCoreExtension",
-                "FirebaseSessions"
+                "FirebaseSessions",
+                "FirebaseRemoteConfigInterop",
+                "FBLPromises",
+                "Promises"
             ]
         ),
     ],
     targets: [
         .binaryTarget(name: "FirebaseAnalytics", path: "Frameworks/FirebaseAnalytics/FirebaseAnalytics.xcframework"),
-        .binaryTarget(name: "FirebaseAnalyticsSwift", path: "Frameworks/FirebaseAnalytics/FirebaseAnalyticsSwift.xcframework"),
         .binaryTarget(name: "FirebaseCore", path: "Frameworks/FirebaseAnalytics/FirebaseCore.xcframework"),
         .binaryTarget(name: "FirebaseCoreInternal", path: "Frameworks/FirebaseAnalytics/FirebaseCoreInternal.xcframework"),
         .binaryTarget(name: "FirebaseInstallations", path: "Frameworks/FirebaseAnalytics/FirebaseInstallations.xcframework"),
@@ -49,18 +48,18 @@ let package = Package(
         .binaryTarget(name: "FirebaseCrashlytics", path: "Frameworks/FirebaseCrashlytics/FirebaseCrashlytics.xcframework"),
         .binaryTarget(name: "GoogleDataTransport", path: "Frameworks/FirebaseCrashlytics/GoogleDataTransport.xcframework"),
         .binaryTarget(name: "FirebaseMessaging", path: "Frameworks/FirebaseMessaging/FirebaseMessaging.xcframework"),
-        .binaryTarget(name: "FirebaseDynamicLinks", path: "Frameworks/FirebaseDynamicLinks/FirebaseDynamicLinks.xcframework"),
         .binaryTarget(name: "FirebaseRemoteConfig", path: "Frameworks/FirebaseRemoteConfig/FirebaseRemoteConfig.xcframework"),
         .binaryTarget(name: "FirebaseABTesting", path: "Frameworks/FirebaseRemoteConfig/FirebaseABTesting.xcframework"),
-        .binaryTarget(name: "FirebaseRemoteConfigSwift", path: "Frameworks/FirebaseRemoteConfig/FirebaseRemoteConfigSwift.xcframework"),
+        .binaryTarget(name: "FirebaseRemoteConfigInterop", path: "Frameworks/FirebaseRemoteConfig/FirebaseRemoteConfigInterop.xcframework"),
         .binaryTarget(name: "FirebaseSharedSwift", path: "Frameworks/FirebaseRemoteConfig/FirebaseSharedSwift.xcframework"),
         .binaryTarget(name: "FirebaseCoreExtension", path: "Frameworks/FirebaseCrashlytics/FirebaseCoreExtension.xcframework"),
         .binaryTarget(name: "FirebaseSessions", path: "Frameworks/FirebaseCrashlytics/FirebaseSessions.xcframework"),
+        .binaryTarget(name: "FBLPromises", path: "Frameworks/FirebaseAnalytics/FBLPromises.xcframework"),
+        .binaryTarget(name: "Promises", path: "Frameworks/FirebaseCrashlytics/Promises.xcframework"),
         .target(
             name: "FirebaseBinaries",
             dependencies: [
                 "FirebaseAnalytics",
-                "FirebaseAnalyticsSwift",
                 "FirebaseCore",
                 "FirebaseCoreInternal",
                 "FirebaseInstallations",
@@ -71,13 +70,14 @@ let package = Package(
                 "FirebaseCrashlytics",
                 "GoogleDataTransport",
                 "FirebaseMessaging",
-                "FirebaseDynamicLinks",
                 "FirebaseRemoteConfig",
                 "FirebaseABTesting",
-                "FirebaseRemoteConfigSwift",
                 "FirebaseSharedSwift",
                 "FirebaseCoreExtension",
-                "FirebaseSessions"
+                "FirebaseSessions",
+                "FirebaseRemoteConfigInterop",
+                "FBLPromises",
+                "Promises"
             ]
         )
     ]
