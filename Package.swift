@@ -30,11 +30,12 @@ let package = Package(
                 "FirebaseSharedSwift",
                 "FirebaseCoreExtension",
                 "FirebaseSessions",
-                "FirebaseRemoteConfigInterop",
-                "FBLPromises",
-                "Promises"
+                "FirebaseRemoteConfigInterop"
             ]
         ),
+    ],
+    dependencies: [
+        .package(url: "https://github.com/google/promises.git", "2.4.0" ..< "3.0.0")
     ],
     targets: [
         .binaryTarget(name: "FirebaseAnalytics", path: "Frameworks/FirebaseAnalytics/FirebaseAnalytics.xcframework"),
@@ -54,8 +55,6 @@ let package = Package(
         .binaryTarget(name: "FirebaseSharedSwift", path: "Frameworks/FirebaseRemoteConfig/FirebaseSharedSwift.xcframework"),
         .binaryTarget(name: "FirebaseCoreExtension", path: "Frameworks/FirebaseCrashlytics/FirebaseCoreExtension.xcframework"),
         .binaryTarget(name: "FirebaseSessions", path: "Frameworks/FirebaseCrashlytics/FirebaseSessions.xcframework"),
-        .binaryTarget(name: "FBLPromises", path: "Frameworks/FirebaseAnalytics/FBLPromises.xcframework"),
-        .binaryTarget(name: "Promises", path: "Frameworks/FirebaseCrashlytics/Promises.xcframework"),
         .target(
             name: "FirebaseBinaries",
             dependencies: [
@@ -76,8 +75,8 @@ let package = Package(
                 "FirebaseCoreExtension",
                 "FirebaseSessions",
                 "FirebaseRemoteConfigInterop",
-                "FBLPromises",
-                "Promises"
+                .product(name: "FBLPromises", package: "Promises"),
+                .product(name: "Promises", package: "Promises")
             ]
         )
     ]
